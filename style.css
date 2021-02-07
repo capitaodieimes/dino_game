@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+body{
+    background: #fafafa;
+}
+.dino{
+width: 60px;
+height: 60px;
+background-image: url(dino.png);
+
+position: absolute;
+bottom: 0;
+}
+.cactus{
+position: absolute;
+width: 60px;
+height: 60px;
+background-image: url(cactus.png);
+bottom: 0;
+}
+.game-over{
+text-align: center;
+color: #eb1010;
+/*position: absolute;*/
+margin-top: 250px;
+font-family: 'Jomhuria', cursive;
+font-size: 96px;
+    letter-spacing:.15em;
+}
+
+@keyframes slideright{
+    from{
+background-position:70000%;
+    }
+    to{
+    background-position: 0;
+    }
+}
+    .background{
+    position: absolute;
+    bottom: 0;
+    background-image: url(background.png);
+    background-repeat: repeat-x;
+    animation:slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+    }
